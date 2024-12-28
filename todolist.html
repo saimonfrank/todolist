@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Enhanced To-Do List</h1>
+                <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark mode">
+                    <span id="modeIcon">🌞</span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div id="notificationContainer" class="notification-container"></div>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+                <button id="addTask">Add Task</button>
+            </div>
+            <div class="sort-container">
+                <label for="sortTasks">Sort by: </label>
+                <select id="sortTasks">
+                    <option value="added">Date Added</option>
+                    <option value="due">Due Date</option>
+                </select>
+            </div>
+            <ul id="taskList"></ul>
+            <button id="clearAll" class="clear-all">Clear All Tasks</button>
+        </main>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
